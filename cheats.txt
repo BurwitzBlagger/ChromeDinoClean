@@ -1,13 +1,16 @@
-1.Normal state save
+1:Normal state save
 var normalDino = Runner.prototype.gameOver 
 
-2.  Immortality
+2:  Immortality
 Runner.prototype.gameOver = function (){} 
 
-3. Speed (replace 1000 with the value you want)
+3.1: Speed (replace 1000 with the value you want)
 Runner.instance_.setSpeed(1000)
 
-4. Immortality cancel
+3.2: Jump velocity (replace 30 with the value you want)
+Runner.instance_.tRex.setJumpVelocity(30)
+
+4: Immortality cancel
 Runner.prototype.gameOver = normalDino
 
 
